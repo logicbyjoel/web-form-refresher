@@ -31,24 +31,27 @@
     <p id="description">this form allows us to better understand your travel needs</p>
     <form method="POST" action="url" id="survey-form">
         <fieldset>
-            <label for="name-label">Enter your name<input id="name-label" name="name-label" type="text"
+            <label for="name" id="name-label">Enter your name<input id="name" name="name-label" type="text"
                     placeholder="your name here" required></label>
-            <label for="email-label">Enter your email: <input id="email-label" name="email-label" type="email"
+            <label for="email" id="email-label">Enter your email: <input id="email" name="email-label" type="email"
                     placeholder="your email" required></label>
-            <label for="number-label">Enter your age<input id="number-label" name="number-label" type="number" min="13"
-                    max="120" placeholder="your age" required></label>
+            <label for="number" id="number-label">Enter your age<input id="number" name="number-label" type="number"
+                    min="13" max="120" placeholder="your age" required></label>
         </fieldset>
         <fieldset>
-            <label for="cruise-ship"><input id="cruise-ship" name="travel-method" type="radio">Cruise Ship</label>
+            <label for="cruise-ship"><input id="cruise-ship" name="travel-method" type="radio"
+                    value="cruise-ship">Cruise Ship</label>
             <label for="bus-check"><input id="bus-check" name="bus-check" type="checkbox" value="true"> I have traveled
                 by cruise
                 ship
                 before</label>
-            <label for="private-jet"><input id="private-jet" name="travel-method" type="radio">Private Jet</label>
+            <label for="private-jet"><input id="private-jet" name="travel-method" type="radio"
+                    value="private-jet">Private Jet</label>
             <label for="private-jet-check"><input type="checkbox" name="private-jet-check" id="private-jet-check"
                     value="true"> I
                 have traveled by private jet before</label>
-            <label for="bus-travel"><input id="bus-travel" name="travel-method" type="radio">Bus </label>
+            <label for="bus-travel"><input id="bus-travel" name="travel-method" type="radio" value="bus-travel">Bus
+            </label>
             <label for="bus-travel-check"><input id="bus-travel-check" name="bus-travel-check" type="checkbox"
                     value="true"> I have
                 traveled by bus before</label>
@@ -65,8 +68,8 @@
             <label for="user-comments">What do you enjoy the most when traveling?</label>
             <textarea name="user-comments" id="user-comments" cols="30" rows="10"></textarea>
         </fieldset>
+        <input id="submit" type="submit" value="Submit">
     </form>
-    <input type="submit" value="Submit">
 </body>
 
 </html>
